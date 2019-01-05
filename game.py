@@ -10,7 +10,7 @@ def run_game():
 	ai_settings=Settings()
 	screen=pygame.display.set_mode((ai_settings.screen_width,ai_settings.screen_heigth))
 	pygame.display.set_caption("Tatuf's Alien Game")
-	ship=Ship(screen)
+	ship=Ship(ai_settings,screen)
 	while True:
 		#keyboard and mouse events
 		gf.check_events(ship)
