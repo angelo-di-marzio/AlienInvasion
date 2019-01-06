@@ -17,6 +17,7 @@ class Ship():
 		self.moving_right=False
 		self.moving_left=False
 
+		self.is_firing=False
 	def update(self):
 		if self.moving_left and self.rect.left>0:
 			self.center -= self.ai_settings.ship_speed
